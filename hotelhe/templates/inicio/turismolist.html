@@ -1,0 +1,40 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Herradura - turismo</title>
+     <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+</head>
+<body >
+
+<header id="header"  >
+    <!-- Navegation Menu -->
+    <nav class="menu">
+        <div class="logobox" >
+            <h1 class="logo"><a href="#">
+                <i class="fas fa-horse"></i>
+                La Herradura
+            </a></h1>
+
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <div class="list-container" >
+            <ul class="lists">
+                <li><a href="{% url 'inicio:list_inicio' %}" class="active">Inicio</a></li>
+                <li><a href="{% url 'inicio:list_inicio' %}">Acerca de nosotros </a></li>
+                <li><a href="{% url 'inicio:list_inicio' %}">Habitaciones</a></li>
+                <li><a href="{% url 'inicio:crear_habitaciones'%}">Reservaciones</a></li>
+                <li><a href="{% url 'inicio:list_turismo' %}">Turismo</a></li>
+                <li><a href="{% url 'inicio:list_inicio' %}">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+
+
+</body>
+</html>

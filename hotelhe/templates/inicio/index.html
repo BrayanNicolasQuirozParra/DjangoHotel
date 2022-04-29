@@ -1,0 +1,613 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Herradura - Inicio</title>
+
+    <!-- Styles -->
+     <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+     <link href={% static "icons/css/all.css" %} >
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+
+<header id="header">
+
+    <!-- Navegation Menu -->
+    <nav class="menu">
+        <div class="logobox">
+            <h1 class="logo"><a href="#">
+                <i class="fas fa-horse"></i>
+                La Herradura
+            </a></h1>
+
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <div class="list-container">
+            <ul class="lists">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#about">Acerca de nosotros </a></li>
+                <li><a href="#reservaciones">Habitaciones</a></li>
+                <li><a href="{% url 'inicio:crear_habitaciones'%}">Reservaciones</a></li>
+                <li><a href="{% url 'inicio:list_turismo' %}">Turismo</a></li>
+                <li><a href="#contactoss">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Img Header -->
+    <figure class="img-header">
+        <div class="welcome">
+            <h4>"El gran habito de descansar bien"</h4>
+            <h2><a href="#">
+                <i class="fas fa-horse"></i>
+                La Herradura - Hotel
+            </a></h2>
+        </div>
+    </figure>
+
+</header>
+
+<main>
+
+    <!-- About Us -->
+    <section class="about-us" id="about">
+        <div class="info">
+            <h3 class="section-title">Acerca de nosotros</h3>
+            <p>Te ofrecemos una noche de comodidad.<br>
+                Somos un Hotel diferente<br>
+                <br>
+                Somos una empresa totalmente Pazricense, siempre pensamos en la comodidad del huesped.<br>
+                <br>
+                Paz de Rio, es un Destino privilegiado, situado en el Departamento de Boyacà, a tan solo 243 kilómetros
+                de la ciudad de Bogotá.<br><br>
+
+                La especialidad de este bello destino, por su riqueza arqueológica, es Historia y Cultura; sin embargo,
+                por estar situado en la capital minera de Colombia, ofrece a los visitantes una riqueza paisajística
+                biodiversa inigualable, con grandes potencialidades y atractivos para el turismo de naturaleza y
+                aventura.<br><br>
+
+                En Este Bello Destino Turístico, está El “Hotel la Herradura” ubicado dentro del pueblo y
+                es totalmente comodo. Es considerado como una alternativa Hotelera única y exclusiva, además de su
+                belleza arquitectónica y paisajística, gracias al concepto con el que fue desarrollado.<br>
+                <br>
+                Para más informacion comunicate al<br>
+                3123633631
+            </p>
+            <hr>
+        </div>
+
+        <div class="free-content">
+            <h4>Contenido 100% gratis!</h4>
+            <div class="icons">
+
+
+                <div>
+                    <div class="span-icon"><span><i class="fas fa-images"></i></span></div>
+                    <h6>Fotos magicas</h6>
+                    <p>Fotos increibles de nuestras habitaciones.</p>
+                </div>
+
+                <div>
+                    <div class="span-icon"><span><i class="fab fa-youtube"></i></span></div>
+                    <h6>Youtube</h6>
+                    <p>Videos de las mejores vistas de nuestro hotel.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Gallery -->
+
+
+    <section>
+
+
+        <section id="reservaciones" class="portfolio section">
+            <div class="container">
+                <h2 class="section-title">HOTEL <br>La Herradura</h2>
+
+                <a href="#cama-1" class="portfolio-card">
+                    <img src={% static 'img/201.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Habitacion Cama Doble</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                            </p>
+                        </div>
+                    </aside>
+                </a>
+                <a href="#cama-2" class="portfolio-card">
+                    <img src={% static 'img/206.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Habitacion Cama Doble</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                            </p>
+                        </div>
+                    </aside>
+                </a>
+
+                <a href="#cama-3" class="portfolio-card">
+                    <img src={% static 'img/305.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Cama Sencilla - Pareja</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                            </p>
+                        </div>
+                    </aside>
+                </a>
+
+                <a href="#cama-4" class="portfolio-card">
+                    <img src={% static 'img/201.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Habitacion Cama Doble</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                            </p>
+                        </div>
+                    </aside>
+                </a>
+
+                <a href="#cama-5" class="portfolio-card">
+                    <img src={% static 'img/206.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Habitacion Cama Doble</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                            </p>
+                        </div>
+                    </aside>
+                </a>
+
+                <a href="#cama-6" class="portfolio-card">
+                    <img src={% static 'img/305.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Cama Sencilla - Pareja</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                        </div>
+                    </aside>
+                </a>
+
+                <a href="#cama-7" class="portfolio-card">
+                    <img src={% static 'img/201.jpeg' %} alt="">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Habitacion Cama Doble</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                            </p>
+                        </div>
+                    </aside>
+                </a>
+
+                <a href="#cama-8" class="portfolio-card">
+                    <img src={% static 'img/305.jpeg' %} alt="trabajo-1">
+                    <aside class="portfolio-card-info">
+                        <div>
+                            <h3>Cama Sencilla - Pareja</h3>
+
+                            <br>
+
+                            <p>
+                                Baño Privado<br>
+                                Tv Por Cable<br>
+                                Agua Caliente<br>
+                                Lugar de trabajo Laptop<br>
+                                Wifi<br>
+                                <br>
+                                Reservacion: 3123633631
+                        </div>
+                    </aside>
+                </a>
+            </div>
+        </section>
+
+
+        <article class="modal" id="cama-1">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/201.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Doble</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <article class="modal" id="cama-2">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/206.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Doble</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <article class="modal" id="cama-3">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/305.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Sencilla - Pareja</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <article class="modal" id="cama-4">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/201.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Doble</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+        <article class="modal" id="cama-5">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/206.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Doble</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+        <article class="modal" id="cama-6">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/305.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Sencilla - Pareja</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small></aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+
+        <article class="modal" id="cama-7">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/201.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Doble</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small></aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+
+        <article class="modal" id="cama-8">
+            <div class="modal-content">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+                    </svg>
+                </a>
+                <article class="portfolio-modal">
+                    <img src={% static 'img/305.jpeg' %} alt="">
+                    <div class="portfolio-info">
+                        <h3>Habitacion Cama Sencilla - Pareja</h3>
+
+                        <br>
+
+                        <p>
+                            Baño Privado<br>
+                            Tv Por Cable<br>
+                            Agua Caliente<br>
+                            Lugar de trabajo Laptop<br>
+                            Wifi<br>
+                            <br>
+                            Reservacion: 3123633631
+                        </p>
+                        <aside class="portfolio-details">
+                            <small class="b">Baño Privado</small>
+                            <small class="b">Tv Por Cable</small>
+                            <small class="b">Agua Caliente</small>
+                            <small class="b">Lugar de Trabajo Laptop</small>
+                            <small class="b">Wifi</small>
+                            <small class="b">Reservacion: 3123633631</small></aside>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </article>
+    </section>
+
+     <section id = "contactoss">
+        <h2 class="section-title">CONTACTOS <br>La Herradura</h2>
+        <center>
+
+
+        <div class="contactos">
+            <br>
+            <br>
+            <br>
+            <h1> COMINICATE CON NOSOTROS</h1>
+            <br>
+            <br>
+            <h2> Paz de Rio Boyaca </h2>
+            <br>
+            <br>
+            <h3> <i class="fas fa-mobile"></i> (1)4740303 </h3>
+            <h3> <i class="fab fa-whatsapp"></i> 3104503280</h3>
+            <h3> <i class="fab fa-whatsapp"></i> 3145854545</h3>
+            <h3> <i class="fas fa-map-marker-alt"></i>  Cra. 15 #78-33 C.C. Unilago Local 2-201 y 2-202</h3>
+            <h3><i class="far fa-envelope"></i>  hotelLaHerradura@gmail.com</h3>
+            </div>
+
+        </center>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Paz de Rio Boyaca - 2021 | Hotel La Herradura
+
+        </p>
+
+    </footer>
+
+</main>
+
+<!-- Scripts -->
+<script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>turismo</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+
+</head>
+<body class="bod">
+
+<header id="header"  >
+    <!-- Navegation Menu -->
+    <nav class="menu">
+        <div class="logobox" >
+            <h1 class="logo"><a href="#">
+                <i class="fas fa-horse"></i>
+                La Herradura
+            </a></h1>
+
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <div class="list-container" >
+            <ul class="lists">
+                <li><a href="{% url 'inicio:list_inicio' %}" class="active">Inicio</a></li>
+                <li><a href="{% url 'inicio:list_inicio' %}">Acerca de nosotros </a></li>
+                <li><a href="{% url 'inicio:list_inicio' %}">Habitaciones</a></li>
+                <li><a href="{% url 'inicio:crear_habitaciones'%}">Reservaciones</a></li>
+                <li><a href="{% url 'inicio:list_turismo' %}">Turismo</a></li>
+                <li><a href="{% url 'inicio:list_inicio' %}">Contacto</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
+
+<br><br><br><br><br><br>
+        <section class="form-register">
+
+
+             <form action="{% url 'inicio:crear_turismoo' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <input class="controls" type="file" name="imagen_turismo" id="habitacion" placeholder="Imagen">
+            <input class="controls" type="text" name="nombre_turismo" id="cantidad" placeholder="Nombre ">
+            <input class="controls" type="text" name="hora_turismo" id="hora" placeholder="Hora" >
+            <input class="controls" type="number" name="precio_turismo" id="precio" placeholder="Precio ">
+            <input class="controls" type="text" name="descripcion_turismo" id="description" placeholder="Descripcion ">
+
+            <button type="submit"> Agregar Producto </button>
+             </form>
+
+        </section>
+
+</body>
+</html>
